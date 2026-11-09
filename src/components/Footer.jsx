@@ -10,7 +10,7 @@ export default function Footer({ onNavigate }) {
 
   return (
     <footer className="relative pt-12 pb-8 border-t border-white/10 bg-slate-950/80 backdrop-blur-md">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-white/5">
           {/* Logo & Info */}

@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import AmbientBackground from './components/AmbientBackground';
 import Hero from './components/Hero';
 import About from './components/About';
-import KhqrSimulator from './components/KhqrSimulator';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
@@ -23,7 +22,7 @@ export default function App() {
   };
 
   useEffect(() => {
-    const sections = ['hero', 'about', 'simulator', 'projects', 'skills', 'journey', 'services', 'contact'];
+    const sections = ['hero', 'about', 'projects', 'skills', 'journey', 'services', 'contact'];
 
     const handleScroll = () => {
       const scrollY = window.scrollY + 200;
@@ -47,17 +46,16 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen bg-[#080c14] text-slate-100 font-sans selection:bg-cyan-500/30 selection:text-cyan-200">
-      {/* Background canvas and ambient mesh */}
+      {/* Subtle ambient universe */}
       <AmbientBackground />
 
-      {/* Floating Glassmorphic Header */}
+      {/* Clean Floating Navbar */}
       <Navbar activeSection={activeSection} onNavigate={handleNavigate} />
 
-      {/* Main Content Sections */}
+      {/* Main Sections */}
       <main className="relative z-10">
         <Hero onNavigate={handleNavigate} />
         <About onNavigate={handleNavigate} />
-        <KhqrSimulator />
         <Projects />
         <Skills />
         <Experience />
